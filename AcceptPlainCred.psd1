@@ -6,6 +6,10 @@
         RetryIntervalSec = 30
         PSDscAllowPlainTextPassword=$true
         PSDscAllowDomainUser = $true
+     },
+     @{ 
+        Nodename = "localhost"
+        Role = "DC"
      }
    )
 }
